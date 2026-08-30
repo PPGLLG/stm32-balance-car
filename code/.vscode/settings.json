@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "*.h": "c",
+        "*.s": "arm-assembly",
+        "*.ld": "linkerscript"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
+    "C_Cpp.default.configurationName": "STM32F103"
+}

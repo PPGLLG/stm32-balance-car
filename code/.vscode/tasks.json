@@ -1,0 +1,74 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (GCC/Make)",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": ["$gcc"],
+            "presentation": { "reveal": "always" }
+        },
+        {
+            "label": "Clean (GCC/Make)",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Rebuild (GCC/Make)",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean", "all"],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": { "reveal": "always" }
+        },
+        {
+            "label": "Flash (st-flash - macOS/Linux)",
+            "type": "shell",
+            "command": "make",
+            "args": ["flash"],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": { "reveal": "always" }
+        },
+        {
+            "label": "Flash (OpenOCD - Windows/Linux)",
+            "type": "shell",
+            "command": "make",
+            "args": ["flash-openocd"],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": { "reveal": "always" }
+        },
+        {
+            "label": "Flash (ST-LINK_CLI - Windows)",
+            "type": "shell",
+            "command": "make",
+            "args": ["flash-stlink"],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": { "reveal": "always" },
+            "windows": {
+                "options": {
+                    "env": {
+                        "STLINK_CLI": "C:/Keil_v5/ARM/STLink/ST-LINK_CLI.exe"
+                    }
+                }
+            }
+        },
+        {
+            "label": "Show Help",
+            "type": "shell",
+            "command": "make",
+            "args": ["help"],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": { "reveal": "always" }
+        }
+    ]
+}

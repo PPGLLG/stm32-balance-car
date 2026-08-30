@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F103",
+            "compilerPath": "arm-none-eabi-gcc",
+            "intelliSenseMode": "gcc-arm",
+            "includePath": [
+                "${workspaceFolder}/code/**",
+                "${workspaceFolder}/code/Core/Inc",
+                "${workspaceFolder}/code/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceFolder}/code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/code/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/code/Drivers/CMSIS/Core/Include",
+                "${workspaceFolder}/code/Middlewares/Third_Party/FreeRTOS/Source/include",
+                "${workspaceFolder}/code/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+                "${workspaceFolder}/code/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3",
+                "${workspaceFolder}/code/Task",
+                "${workspaceFolder}/code/App",
+                "${workspaceFolder}/code/BSP/**"
+            ],
+            "defines": [
+                "STM32F103xB",
+                "USE_HAL_DRIVER",
+                "CMSIS_device_header=\"stm32f1xx.h\"",
+                "USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION=1"
+            ],
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (ST-Link)",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/output.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "serverType": "stlink",
+            "svdFile": "./STM32F103x8.svd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build (GCC/Make)"
+        },
+        {
+            "name": "Debug (ST-Link, no rebuild)",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/output.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "serverType": "stlink",
+            "svdFile": "./STM32F103x8.svd",
+            "runToEntryPoint": "main"
+        }
+    ]
+}
